@@ -1,4 +1,6 @@
 """Trey Grant"""
+
+
 def main():
     name = get_name()
     print(name[1::2])
