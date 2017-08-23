@@ -2,7 +2,7 @@
 
 def main():
     name = get_name()
-    print_parts(name, 3)
+    print_parts(name)
 
 
 def print_parts(name, step=2):

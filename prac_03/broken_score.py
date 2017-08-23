@@ -7,18 +7,18 @@ Broken program to determine score status
 def main():
     score = float(input("Enter score: "))
 
-    print_score(score)
+    print(return_score(score))
 
 
-def print_score(score):
+def return_score(score):
     if score > 100 or score < 0:
-        print("Invalid Score")
+        return ("Invalid Score")
     elif score >= 90:
-        print("Excellent Score")
+        return ("Excellent Score")
     elif score >= 50:
-        print("Passable")
+        return ("Passable")
     else:
-        print("Bad")
+        return ("Bad")
 
 
 main()
