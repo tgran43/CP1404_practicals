@@ -9,4 +9,3 @@ while colour != "":
     colour = input("Enter colour name: ").lower()
 for color, colour_code in COLOUR_CODES.items():
     print("{:6} is {}".format(color, colour_code))
-
