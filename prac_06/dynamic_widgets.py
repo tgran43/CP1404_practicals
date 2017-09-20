@@ -3,11 +3,10 @@ from kivy.lang import Builder
 from kivy.uix.button import Label
 
 
-
 class DynamicWidgetsApp(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.names = ["Bob Brown", "Cat Cyan", "Oren Ochre","Dave", "Bill"]
+        self.names = ["Bob Brown", "Cat Cyan", "Oren Ochre", "Dave", "Bill"]
 
     def build(self):
         self.title = "Dynamic Widgets"
@@ -21,7 +20,5 @@ class DynamicWidgetsApp(App):
             self.root.ids.entriesBox.add_widget(temp_label)
 
 
-    def clear_all(self):
-        self.root.ids.entriesBox.clear_widgets()
 
 DynamicWidgetsApp().run()
